@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-image: url('bgg.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       ;
+       
+    }
+    
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    
+    form{
+        width: 500px;
+        border: 2px solid brown;
+        padding: 30px;
+        background:#fff;
+        border-radius: 15px;
+        
+    }
+    
+    h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    input{
+        display: block;
+        border:2px solid brown ;
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    label{
+        color: #2a2929;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    button{
+        float: right;
+        background: #555;
+        padding: 10px 15px;
+        color: #2a2929;
+        border-radius: 10px;
+        margin-right: 10px;
+        border: none;
+    }
+    
+    button:hover{
+        opacity: .7;
+    }
+    
+    </style>
+    
+    <script>
+        function showAlert() {
+            alert('Thankyou for your submission story');
+        }
+    </script>
+</head>
+<body>
+    <form action="evidence.html" method="post" onsubmit="showAlert()">
+        <h2>CLUE CARDS</h2>
+        <label>STORY (read to the player at the start of the game)</label>
+        <input type="text" name="uname" placeholder="story" required><br>
+        
+        <label>CRIME TIMELINE (what really happened)</label>
+        <div class="password-container">
+            <input type="text" name="story" id="password" placeholder="crime timeline" required>
+            <label>SUSPECT</label>
+            <input type="text" name="uname" placeholder="name" required><br>
+            <input type="text" name="story" id="password" placeholder="EYE WITNESS" required>
+            <input type="text" name="story" id="password" placeholder="INSPECTION" required>
+            <input type="text" name="story" id="password" placeholder="DATABASE RECORD" required>
+            <input type="text" name="story" id="password" placeholder="FORENSIC FINDINGS" required>
+            <input type="text" name="story" id="password" placeholder="INTERROGATION" required>
+          
+            
+        </div>
+        <button type="submit">ENTER</button>
+    </form>
+    
+</body>
+</html>
